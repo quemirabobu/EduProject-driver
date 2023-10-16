@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/texttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="차량번호입력"
+            android:textSize="40dp"
+            android:textColor="#287A09"
+            android:typeface="serif"
+            android:textAlignment="center"
+            android:fontFamily="@font/baeminjua"
+            />
+
+        <EditText
+            android:id="@+id/edit_carnumber"
+            android:layout_width="200dp"
+            android:textAlignment="center"
+
+            android:layout_height="wrap_content"
+            android:hint="Busnumber" />
+
+
+
+
+        <TextView
+            android:id="@+id/phonenumbertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="휴대폰번호 입력"
+            android:fontFamily="@font/baeminjua"
+
+            android:textSize="40dp"
+            android:textColor="#287A09"
+            android:typeface="serif"
+            />
+
+        <EditText
+            android:id="@+id/edit_phonenumber"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+
+            android:hint="Phonenumber" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/baeminjua"
+android:textColor="@color/white"
+            android:backgroundTint="#DF2D7C0E"
+android:layout_marginBottom="100dp"
+            android:text="시작" />
+
+        <TextView
+            android:id="@+id/cameratitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이들 사진찍기"
+            android:fontFamily="@font/baeminjua"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:textColor="#287A09"
+            android:typeface="serif"
+            android:layout_marginBottom="30px"
+            />
+
+        <FrameLayout
+            android:id="@+id/camerabox"
+
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:padding="8dp"
+            android:background="@drawable/camerabox"
+
+     >
+
+<!--            <TextView-->
+<!--                android:id="@+id/cameratitle"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="아이들 사진찍기"-->
+<!--                android:fontFamily="@font/baeminjua"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:textSize="30dp"-->
+<!--                android:layout_marginLeft="50dp"-->
+<!--                android:textColor="#287A09"-->
+<!--                android:typeface="serif"-->
+<!--                />-->
+
+
+            <TextView
+                android:id="@+id/cameratext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이들의 안전을 위해 사진을 찍어주세요"
+                android:fontFamily="@font/baeminjua"
+android:layout_marginTop="50dp"
+                android:layout_marginLeft="22dp"
+                android:textSize="16dp"
+                android:textColor="#287A09"
+                android:typeface="serif"
+                />
+
+
+            <Button
+                android:id="@+id/captureButton"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center|bottom"
+                android:backgroundTint="#DF2D7C0E"
+                android:fontFamily="@font/baeminjua"
+                android:textColor="@color/white"
+                android:text="사진찍기"
+                android:drawableLeft="@drawable/camera_icon"
+            android:drawablePadding="8dp"
+            />
+
+    </FrameLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
